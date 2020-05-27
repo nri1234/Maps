@@ -1,0 +1,20 @@
+@mixin carouselCells {
+  @for $i from 1 through 9 {
+    .carousel-cell-#{$i} {
+      //background-image: url(../images/1600x600-#{$i}.jpg);
+      background-size: cover;
+    }
+  }
+}
+
+@mixin randomPositions {
+    @media(min-width: 992px) {
+  @for $i from 1 through 9 {
+    .carousel-cell-#{$i} .container p {
+      right: random(30) + 5%;
+      bottom: random(40) + 5%;
+      top: unset;
+    }
+  }
+}
+}

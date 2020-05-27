@@ -1,0 +1,42 @@
+{
+  "name": "maps",
+  "version": "1.0.0",
+  "description": "Google maps and API",
+  "main": "index.html",
+  "scripts": {
+    "test": "npm-run-all test:*",
+    "test:all": "html-validator --allfiles --verbose",
+    "init-project": "npm install && npm-run-all init:*",
+    "init:dirs": "mkdirp sass css vendor images js",
+    "init:files": "touch README.md index.html sass/style.scss js/script.js css/style.css",
+    "init:gitignore": "curl https://raw.githubusercontent.com/github/gitignore/master/Node.gitignore -o .gitignore",
+    "init:normalize": "curl https://necolas.github.io/normalize.css/latest/normalize.css -o vendor/normalize.css",
+    "init:mustache": "curl https://raw.githubusercontent.com/janl/mustache.js/master/mustache.js -o vendor/mustache.js",
+    "init:git": "git add . && git commit -m \"Init Message\" ",
+    "build": "npm-run-all build:*",
+    "build:clean": "rimraf css",
+    "build:sass": "node-sass --output-style compact -o css sass",
+    "build:autoprefixer": "autoprefixer-cli css/style.css",
+    "build-dev:sass": "node-sass --output-style expanded --source-map true -o css sass",
+    "watch": "npm-run-all build test -p watch:*",
+    "watch:sassprefixer": "onchange -d 100 sass/*.scss sass/**/*.scss -- npm-run-all watch:sass watch:autoprefixer",
+    "watch:sass": "node-sass --output-style expanded --source-map true -o css sass",
+    "watch:autoprefixer": "autoprefixer-cli css/style.css ",
+    "watch:validate": "onchange *.html -- npm-run-all test:all",
+    "_watch:git": "onchange * -- git status",
+    "watch:browsersync": "browser-sync start --server --files=css js *.html"
+  },
+  "keywords": [],
+  "author": "Bartek Bugała",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer-cli": "^1.0.0",
+    "browser-sync": "^2.26.5",
+    "globstar": "^1.0.0",
+    "mkdirp": "^0.5.1",
+    "node-sass": "^4.11.0",
+    "npm-run-all": "^4.1.5",
+    "onchange": "^5.2.0",
+    "rimraf": "^2.6.3"
+  }
+}

@@ -1,0 +1,83 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    p {
+        color: white;
+        display: block;
+        padding: 40px 20px;
+        position: absolute;
+        font-size: 30px;
+        margin: 0 auto;
+        text-align: center;
+        top: 10px;
+        right: 10px;
+        background-color: rgb(128, 128, 128);
+        background-color: rgba(128, 128, 128, 0.5);
+        border-radius: 0 100px 100px 100px;
+    }
+}
+
+#mapid {
+    height: calc(50% - 20px);
+  }
+  .map-button-wrapper {
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%); 
+    position: absolute;
+    z-index: 99999;
+    button {
+        opacity: 0.2;
+        box-shadow: unset;
+        padding: 12px;
+        background-color: white;
+        border: none;
+        border-radius: 3px;
+        color: rgb(104, 104, 104);
+        text-transform: uppercase;
+        font-family: arial;
+        font-weight: bold;
+        &:hover {
+            opacity: 1;
+        }
+    }
+  }
+
+
+@include randomPositions;
+
+@media(max-width: 767px) {
+    .container {
+        width: 1200px;
+        margin: 0 auto;
+        p {
+            color: white;
+            display: block;
+            word-wrap: break-word;
+            white-space: wrap;
+            padding: 5px 30px;
+            position: absolute;
+            font-size: 20px;
+            margin: 0 auto;
+            text-align: center;
+            background-color: rgba(128, 128, 128, 0.5);
+            border-radius: 0;
+            width: 80%;
+            overflow: hidden;
+            
+            margin-top: 30vh;
+        }
+    }
+    [class^=".carousel-cell-"] .container p {
+        top: unset;
+        bottom: unset;
+    }
+}
+
+    

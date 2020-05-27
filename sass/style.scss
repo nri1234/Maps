@@ -1,0 +1,25 @@
+@import "mixins";
+@import "flickity";
+@import "layout";
+
+
+// CHEATSHEET
+//@mixin grid($prefix) {
+//    @for $i from 1 through 12 {
+//      .col-#{$prefix}-#{$i} {
+//        $width: 100% / 12 * $i;
+//        flex: 0 0 $width;
+//        max-width: $width;
+//      }
+//    }
+//  }
+//
+// ===================
+//
+//@include grid('lg');
+//
+// ===================
+//
+// $body-background-color: #f5f5f2;
+//
+// ===================
