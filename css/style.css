@@ -51,15 +51,15 @@ html, body { height: 100%; margin: 0; padding: 0; }
 
 .map-button-wrapper button:hover { opacity: 1; }
 
-@media (min-width: 992px) { .carousel-cell-1 .container p { right: 31%; bottom: 32%; top: unset; }
-  .carousel-cell-2 .container p { right: 29%; bottom: 29%; top: unset; }
-  .carousel-cell-3 .container p { right: 35%; bottom: 37%; top: unset; }
-  .carousel-cell-4 .container p { right: 16%; bottom: 10%; top: unset; }
-  .carousel-cell-5 .container p { right: 32%; bottom: 23%; top: unset; }
-  .carousel-cell-6 .container p { right: 23%; bottom: 16%; top: unset; }
-  .carousel-cell-7 .container p { right: 27%; bottom: 39%; top: unset; }
-  .carousel-cell-8 .container p { right: 26%; bottom: 37%; top: unset; }
-  .carousel-cell-9 .container p { right: 10%; bottom: 45%; top: unset; } }
+@media (min-width: 992px) { .carousel-cell-1 .container p { right: 7%; bottom: 8%; top: unset; }
+  .carousel-cell-2 .container p { right: 25%; bottom: 37%; top: unset; }
+  .carousel-cell-3 .container p { right: 18%; bottom: 28%; top: unset; }
+  .carousel-cell-4 .container p { right: 16%; bottom: 22%; top: unset; }
+  .carousel-cell-5 .container p { right: 32%; bottom: 17%; top: unset; }
+  .carousel-cell-6 .container p { right: 15%; bottom: 45%; top: unset; }
+  .carousel-cell-7 .container p { right: 7%; bottom: 22%; top: unset; }
+  .carousel-cell-8 .container p { right: 32%; bottom: 13%; top: unset; }
+  .carousel-cell-9 .container p { right: 23%; bottom: 14%; top: unset; } }
 
 @media (max-width: 767px) { .container { width: 1200px; margin: 0 auto; }
   .container p { color: white; display: block; word-wrap: break-word; white-space: wrap; padding: 5px 30px; position: absolute; font-size: 20px; margin: 0 auto; text-align: center; background-color: rgba(128, 128, 128, 0.5); border-radius: 0; width: 80%; overflow: hidden; margin-top: 30vh; }
