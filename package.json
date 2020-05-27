@@ -4,8 +4,6 @@
   "description": "Google maps and API",
   "main": "index.html",
   "scripts": {
-    "test": "npm-run-all test:*",
-    "test:all": "html-validator --allfiles --verbose",
     "init-project": "npm install && npm-run-all init:*",
     "init:dirs": "mkdirp sass css vendor images js",
     "init:files": "touch README.md index.html sass/style.scss js/script.js css/style.css",
@@ -18,7 +16,7 @@
     "build:sass": "node-sass --output-style compact -o css sass",
     "build:autoprefixer": "autoprefixer-cli css/style.css",
     "build-dev:sass": "node-sass --output-style expanded --source-map true -o css sass",
-    "watch": "npm-run-all build test -p watch:*",
+    "watch": "npm-run-all build -p watch:*",
     "watch:sassprefixer": "onchange -d 100 sass/*.scss sass/**/*.scss -- npm-run-all watch:sass watch:autoprefixer",
     "watch:sass": "node-sass --output-style expanded --source-map true -o css sass",
     "watch:autoprefixer": "autoprefixer-cli css/style.css ",

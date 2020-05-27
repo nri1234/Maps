@@ -1,239 +1,66 @@
 /* position dots in carousel */
-.carousel-wrapper {
-  height: 50%;
-  margin-bottom: 20px;
-  /* white circles */
-  /* fill-in selected dot */
-}
+.carousel-wrapper { height: 50%; margin-bottom: 20px; /* white circles */ /* fill-in selected dot */ }
 
-.carousel-wrapper .main-carousel {
-  height: 100%;
-  position: relative;
-}
+.carousel-wrapper .main-carousel { height: 100%; position: relative; }
 
-.carousel-wrapper .carousel-cell-1 {
-  background-size: cover;
-}
+.carousel-wrapper .carousel-cell-1 { background-size: cover; }
 
-.carousel-wrapper .carousel-cell-2 {
-  background-size: cover;
-}
+.carousel-wrapper .carousel-cell-2 { background-size: cover; }
 
-.carousel-wrapper .carousel-cell-3 {
-  background-size: cover;
-}
+.carousel-wrapper .carousel-cell-3 { background-size: cover; }
 
-.carousel-wrapper .carousel-cell-4 {
-  background-size: cover;
-}
+.carousel-wrapper .carousel-cell-4 { background-size: cover; }
 
-.carousel-wrapper .carousel-cell-5 {
-  background-size: cover;
-}
+.carousel-wrapper .carousel-cell-5 { background-size: cover; }
 
-.carousel-wrapper .carousel-cell-6 {
-  background-size: cover;
-}
+.carousel-wrapper .carousel-cell-6 { background-size: cover; }
 
-.carousel-wrapper .carousel-cell-7 {
-  background-size: cover;
-}
+.carousel-wrapper .carousel-cell-7 { background-size: cover; }
 
-.carousel-wrapper .carousel-cell-8 {
-  background-size: cover;
-}
+.carousel-wrapper .carousel-cell-8 { background-size: cover; }
 
-.carousel-wrapper .carousel-cell-9 {
-  background-size: cover;
-}
+.carousel-wrapper .carousel-cell-9 { background-size: cover; }
 
-.carousel-wrapper .flickity-page-dots {
-  bottom: 10px;
-}
+.carousel-wrapper .flickity-page-dots { bottom: 10px; }
 
-.carousel-wrapper .flickity-page-dots .dot {
-  width: 12px;
-  height: 12px;
-  opacity: 1;
-  background: transparent;
-  border: 2px solid white;
-}
+.carousel-wrapper .flickity-page-dots .dot { width: 12px; height: 12px; opacity: 1; background: transparent; border: 2px solid white; }
 
-.carousel-wrapper .flickity-page-dots .dot.is-selected {
-  background: white;
-}
+.carousel-wrapper .flickity-page-dots .dot.is-selected { background: white; }
 
-.carousel-wrapper .carousel-cell {
-  width: 100%;
-  /* full width */
-  height: 100%;
-  /* height of carousel */
-  margin-right: 0;
-}
+.carousel-wrapper .carousel-cell { width: 100%; /* full width */ height: 100%; /* height of carousel */ margin-right: 0; }
 
-.carousel-wrapper .progress-bar {
-  height: 20px;
-  width: 0;
-  background: #333;
-}
+.carousel-wrapper .progress-bar { height: 20px; width: 0; background: #333; }
 
-.carousel-wrapper .button-group {
-  position: absolute;
-  z-index: 1000;
-  left: 50%;
-  translate: translate(-40%);
-  top: 20px;
-}
+.carousel-wrapper .button-group { position: absolute; z-index: 1000; left: 50%; translate: translate(-40%); top: 20px; }
 
-.carousel-wrapper .button-group .btn {
-  z-index: 1000;
-  opacity: 0.8;
-  box-shadow: unset;
-  white-space: wrap;
-  width: 80px;
-  height: 80px;
-  text-align: center;
-  padding: 12px;
-  background-color: white;
-  border: none;
-  border-radius: 50%;
-  color: #525252;
-  text-transform: uppercase;
-  font-family: arial;
-  font-weight: bold;
-}
+.carousel-wrapper .button-group .btn { z-index: 1000; opacity: 0.8; box-shadow: unset; white-space: wrap; width: 80px; height: 80px; text-align: center; padding: 12px; background-color: white; border: none; border-radius: 50%; color: #525252; text-transform: uppercase; font-family: arial; font-weight: bold; }
 
-.carousel-wrapper .button-group .btn:hover {
-  opacity: 1;
-}
+.carousel-wrapper .button-group .btn:hover { opacity: 1; }
 
-html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
+html, body { height: 100%; margin: 0; padding: 0; }
 
-.container {
-  width: 1200px;
-  margin: 0 auto;
-}
+.container { width: 1200px; margin: 0 auto; }
 
-.container p {
-  color: white;
-  display: block;
-  padding: 40px 20px;
-  position: absolute;
-  font-size: 30px;
-  margin: 0 auto;
-  text-align: center;
-  top: 10px;
-  right: 10px;
-  background-color: gray;
-  background-color: rgba(128, 128, 128, 0.5);
-  border-radius: 0 100px 100px 100px;
-}
+.container p { color: white; display: block; padding: 40px 20px; position: absolute; font-size: 30px; margin: 0 auto; text-align: center; top: 10px; right: 10px; background-color: gray; background-color: rgba(128, 128, 128, 0.5); border-radius: 0 100px 100px 100px; }
 
-#mapid {
-  height: calc(50% - 20px);
-}
+#mapid { height: calc(50% - 20px); }
 
-.map-button-wrapper {
-  bottom: 20px;
-  left: 50%;
-  transform: translate(-50%);
-  position: absolute;
-  z-index: 99999;
-}
+.map-button-wrapper { bottom: 20px; left: 50%; transform: translate(-50%); position: absolute; z-index: 99999; }
 
-.map-button-wrapper button {
-  opacity: 0.2;
-  box-shadow: unset;
-  padding: 12px;
-  background-color: white;
-  border: none;
-  border-radius: 3px;
-  color: #686868;
-  text-transform: uppercase;
-  font-family: arial;
-  font-weight: bold;
-}
+.map-button-wrapper button { opacity: 0.2; box-shadow: unset; padding: 12px; background-color: white; border: none; border-radius: 3px; color: #686868; text-transform: uppercase; font-family: arial; font-weight: bold; }
 
-.map-button-wrapper button:hover {
-  opacity: 1;
-}
+.map-button-wrapper button:hover { opacity: 1; }
 
-@media (min-width: 992px) {
-  .carousel-cell-1 .container p {
-    right: 16%;
-    bottom: 35%;
-    top: unset;
-  }
-  .carousel-cell-2 .container p {
-    right: 35%;
-    bottom: 39%;
-    top: unset;
-  }
-  .carousel-cell-3 .container p {
-    right: 15%;
-    bottom: 37%;
-    top: unset;
-  }
-  .carousel-cell-4 .container p {
-    right: 28%;
-    bottom: 13%;
-    top: unset;
-  }
-  .carousel-cell-5 .container p {
-    right: 35%;
-    bottom: 16%;
-    top: unset;
-  }
-  .carousel-cell-6 .container p {
-    right: 17%;
-    bottom: 16%;
-    top: unset;
-  }
-  .carousel-cell-7 .container p {
-    right: 35%;
-    bottom: 34%;
-    top: unset;
-  }
-  .carousel-cell-8 .container p {
-    right: 35%;
-    bottom: 21%;
-    top: unset;
-  }
-  .carousel-cell-9 .container p {
-    right: 14%;
-    bottom: 24%;
-    top: unset;
-  }
-}
+@media (min-width: 992px) { .carousel-cell-1 .container p { right: 31%; bottom: 32%; top: unset; }
+  .carousel-cell-2 .container p { right: 29%; bottom: 29%; top: unset; }
+  .carousel-cell-3 .container p { right: 35%; bottom: 37%; top: unset; }
+  .carousel-cell-4 .container p { right: 16%; bottom: 10%; top: unset; }
+  .carousel-cell-5 .container p { right: 32%; bottom: 23%; top: unset; }
+  .carousel-cell-6 .container p { right: 23%; bottom: 16%; top: unset; }
+  .carousel-cell-7 .container p { right: 27%; bottom: 39%; top: unset; }
+  .carousel-cell-8 .container p { right: 26%; bottom: 37%; top: unset; }
+  .carousel-cell-9 .container p { right: 10%; bottom: 45%; top: unset; } }
 
-@media (max-width: 767px) {
-  .container {
-    width: 1200px;
-    margin: 0 auto;
-  }
-  .container p {
-    color: white;
-    display: block;
-    word-wrap: break-word;
-    white-space: wrap;
-    padding: 5px 30px;
-    position: absolute;
-    font-size: 20px;
-    margin: 0 auto;
-    text-align: center;
-    background-color: rgba(128, 128, 128, 0.5);
-    border-radius: 0;
-    width: 80%;
-    overflow: hidden;
-    margin-top: 30vh;
-  }
-  [class^=".carousel-cell-"] .container p {
-    top: unset;
-    bottom: unset;
-  }
-}
-/*# sourceMappingURL=style.css.map */
+@media (max-width: 767px) { .container { width: 1200px; margin: 0 auto; }
+  .container p { color: white; display: block; word-wrap: break-word; white-space: wrap; padding: 5px 30px; position: absolute; font-size: 20px; margin: 0 auto; text-align: center; background-color: rgba(128, 128, 128, 0.5); border-radius: 0; width: 80%; overflow: hidden; margin-top: 30vh; }
+  [class^=".carousel-cell-"] .container p { top: unset; bottom: unset; } }
