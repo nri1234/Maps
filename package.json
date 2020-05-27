@@ -27,8 +27,8 @@
     "watch:browsersync": "browser-sync start --server --files=css js *.html"
   },
   "keywords": [],
-  "author": "Bartek Bugała",
-  "license": "MIT",
+  "author": "Norbert",
+  "license": "mine",
   "devDependencies": {
     "autoprefixer-cli": "^1.0.0",
     "browser-sync": "^2.26.5",
